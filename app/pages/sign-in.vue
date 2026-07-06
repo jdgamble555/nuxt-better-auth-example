@@ -42,7 +42,7 @@ const handleSignIn = async () => {
                     <div class="grid gap-2">
                         <div class="flex items-center">
                             <Label for="password">Password</Label>
-                            <a href="/forget-password" class="ml-auto inline-block text-sm underline">
+                            <a href="/forgot-password" class="ml-auto inline-block text-sm underline">
                                 Forgot your password?
                             </a>
                         </div>

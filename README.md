@@ -14,4 +14,5 @@ Email & Password . Social Sign-in with Google
    npm install
    npm run dev
    ```
-4. Open the browser and navigate to `http://localhost:3000`
+4. Create `.env` with this `BETTER_AUTH_URL=http://localhost:3000` for testing.
+5. Open the browser and navigate to `http://localhost:3000`
