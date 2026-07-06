@@ -11,7 +11,7 @@ Email & Password . Social Sign-in with Google
 2. Move .env.example to .env and provide necessary variables
 3. Run the following commands
    ```bash
-   pnpm install
-   pnpm dev
+   npm install
+   npm run dev
    ```
 4. Open the browser and navigate to `http://localhost:3000`
