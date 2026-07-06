@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import { signOut, useSession } from "~/lib/auth-client";
+import { signOut } from "~/lib/auth-client";
 
 const router = useRouter();
-const session = useSession();
-const user = computed(() => session.value.data?.user ?? null);
+
+const { data: user } = await useAsyncData("accounts", () =>
+  useAuth()
+    .getSession()
+    .then((res) => res.data?.user),
+);
 </script>
 
 <template>
@@ -12,7 +16,7 @@ const user = computed(() => session.value.data?.user ?? null);
   >
     <Card class="w-87.5">
       <CardHeader>
-        <CardTitle> User </CardTitle>
+        <CardTitle>User</CardTitle>
       </CardHeader>
       <CardContent>
         <div v-if="user" class="flex gap-2 items-center">
