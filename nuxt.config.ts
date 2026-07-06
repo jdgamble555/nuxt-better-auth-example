@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   srcDir: "./app",
-  css: ["./app/assets/css/tailwind.css"],
+  css: ["./app/assets/css/main.css"],
   modules: [],
   components: [
     {
