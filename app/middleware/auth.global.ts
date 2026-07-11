@@ -3,7 +3,7 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
 		headers: useRequestHeaders(["cookie"]),
 	}).catch(() => null);
 
-	const authPages = ["/sign-in", "/sign-up", "/forget-password", "/reset-password"];
+	const authPages = ["/sign-in", "/sign-up", "/forgot-password", "/reset-password"];
 	const protectedPages = ["/dashboard", "/change-password"];
 
 	if (!session) {
