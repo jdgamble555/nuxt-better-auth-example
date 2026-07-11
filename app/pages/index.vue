@@ -27,8 +27,17 @@ const session = useSession();
                     Better Auth.
                 </h3>
 
-                <p class="text-center break-words text-sm md:text-base">
-                    Official demo to showcase
+                <p class="text-center wrap-break-word text-sm md:text-base">
+                    <span class="inline-flex items-center gap-2">
+                        <span class="relative inline-block -rotate-2 pr-1 text-[0.78rem] font-black uppercase tracking-[0.16em] text-red-600/80">
+                            <span class="absolute left-0 right-0 top-1/2 h-0.5 -translate-y-1/2 -rotate-3 rounded-full bg-linear-to-r from-red-400 via-red-600 to-red-400 shadow-[0_0_10px_rgba(220,38,38,0.45)]" />
+                            <span>official</span>
+                        </span>
+                        <span class="inline-flex items-center rounded-full border border-blue-500/40 bg-linear-to-r from-blue-500/10 to-blue-500/10 px-2.5 py-0.5 text-[0.72rem] font-bold uppercase tracking-[0.14em] text-blue-700 shadow-sm">
+                            unofficial
+                        </span>
+                    </span>
+                    demo to showcase
                     <a
 							href="https://better-auth.com"
 							target="_blank"

@@ -37,7 +37,10 @@ const { data: user } = await useAsyncData("accounts", () =>
           </div>
         </div>
       </CardContent>
-      <CardFooter>
+      <CardFooter class="flex gap-2">
+        <Button as-child variant="outline">
+          <NuxtLink to="/change-password">Change Password</NuxtLink>
+        </Button>
         <Button
           :disabled="!user"
           @click="

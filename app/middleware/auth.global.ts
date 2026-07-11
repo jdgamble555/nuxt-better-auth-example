@@ -4,9 +4,10 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
 	}).catch(() => null);
 
 	const authPages = ["/sign-in", "/sign-up", "/forget-password", "/reset-password"];
+	const protectedPages = ["/dashboard", "/change-password"];
 
 	if (!session) {
-		if (to.path === "/dashboard") {
+		if (protectedPages.includes(to.path)) {
 			return navigateTo("/");
 		}
 	}
